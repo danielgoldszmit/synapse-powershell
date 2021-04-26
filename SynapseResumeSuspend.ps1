@@ -44,7 +44,7 @@ IF ($SynapseAction -like 'Resume')
 {
     $resultDatabase = $database | Resume-AzSqlDatabase
 } 
-ELSEIF 
+ELSE 
 {
     $resultDatabase = $database | Suspend-AzSqlDatabase
 }
